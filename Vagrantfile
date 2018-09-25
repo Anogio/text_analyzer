@@ -1,3 +1,4 @@
+Vagrant::DEFAULT_SERVER_URL.replace('https://vagrantcloud.com')
 $BOX = "centos/7"
 $IP = "10.0.0.10"
 $MEMORY = ENV.has_key?('VM_MEMORY') ? ENV['VM_MEMORY'] : "1024"
