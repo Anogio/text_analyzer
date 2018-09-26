@@ -9,8 +9,8 @@ jobs:
     - run:
         name: install-dependencies
         command: yarn install
-    - run: npm install -g karma
-    - run: npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev
-    - run: npm install -g karma-cli
+    - run: sduo npm install -g karma
+    - run: sudo npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev
+    - run: sudo npm install -g karma-cli
     - run: karma start
     - run: karma test
