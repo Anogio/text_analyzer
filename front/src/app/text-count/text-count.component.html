@@ -1,0 +1,11 @@
+<div>
+	Enter your text here
+	<br />
+	<textarea [(ngModel)]="inputText" placeholder="Enter text"></textarea>
+	<br />
+	<p>
+		{{inputText}}
+		Your text has {{inputText.length}} letters
+	</p>
+	<button (click)="putText(inputText)">Save text</button>
+</div>

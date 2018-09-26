@@ -1,0 +1,34 @@
+{
+  "name": "Text",
+  "plural": "Texts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Author": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "string",
+      "required": true,
+      "default": "Good"
+    },
+    "Good": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

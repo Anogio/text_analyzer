@@ -1,0 +1,6 @@
+<textarea [(ngModel)]="textId" placeholder="Enter Id"></textarea>
+<button (click)="getStats(textId)">Save text</button>
+<br />
+{{stats | json}}
+
+<app-stat-charts [xVals]='xVals' [yVals]='yVals'></app-stat-charts>

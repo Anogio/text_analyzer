@@ -1,10 +1,20 @@
 ---
 
 - hosts: all
-  gather_facts: False
+  gather_facts: True
+  become: true
 
   tasks:
   - name: Ensure git is installed.
     yum:
       name: git
       state: installed
+
+  roles:
+    - ansible-role-nginx
+    - ansible-role-repo-epel
+    - ansible-role-nodejs
+    - ansible-role-supervisor
+      #  - ansible-role-mongodb
+    - ansible-role-pip
+
